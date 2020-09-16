@@ -8,8 +8,8 @@ Installation
 
 1. Add this extension to your Gemfile with these lines:
 
-        gem 'spree_afterpay', github: 'vinsol-spree-contrib/spree-afterpay', branch: 'master'
-        gem 'afterpay-ruby', github: 'rajneeshsharma9/afterpay-ruby', branch: 'master'
+        gem 'spree_afterpay', github: 'rodrigo-gn/spree-afterpay', branch: 'master'
+        gem 'afterpay-ruby', github: 'rodrigo-gn/afterpay-ruby', branch: 'master'
 
 2. Install the gem using Bundler:
 
