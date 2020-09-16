@@ -1,5 +1,5 @@
 module Spree
-  class Gateway::Afterpay < Gateway
+  class Gateway::AfterpayPayments < Gateway
 
     def supports?(source)
       true
