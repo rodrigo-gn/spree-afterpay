@@ -6,8 +6,8 @@ Unofficial Integration of AfterPay Payment gateway for spree
 Add these lines to your application's Gemfile:
 
 ```ruby
-gem 'spree_afterpay', github: 'vinsol-spree-contrib/spree-afterpay', branch: 'master'
-gem 'afterpay-ruby', github: 'rajneeshsharma9/afterpay-ruby', branch: 'master'
+gem 'spree_afterpay', github: 'rodrigo-gn/spree-afterpay', branch: 'master'
+gem 'afterpay-ruby', github: 'rodrigo-gn/afterpay-ruby', branch: 'master'
 ```
 
 And then execute:
