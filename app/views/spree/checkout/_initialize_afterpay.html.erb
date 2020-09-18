@@ -6,7 +6,7 @@
 <script type="text/javascript">
   window.onload = function() {
     // AfterPay.initialize({ countryCode: "AU" });
-    AfterPay.initialize({ countryCode: Spree::Country.find_by(id: Spree::Config[:default_country_id])&.iso || 'US' });
+    AfterPay.initialize({ countryCode: '<%= Spree::Country.find_by(id: Spree::Config[:default_country_id])&.iso %>' || 'US' });
     AfterPay.redirect({ token: "<%= @token %>" });
   };
 </script>
