@@ -46,7 +46,7 @@ module Spree
     def create_afterpay_payment
       @order.payments.create!({
         source: Spree::Afterpay.create({
-          payment_method_id: params[:payment_method_id]
+          payment_method_id: payment_method.id
         }),
         amount: @order.total,
         state: 'checkout',
