@@ -1,5 +1,7 @@
 module Spree
-  class AfterpayController < StoreController
+  class AfterpayController < ApplicationController
+
+    include Spree::Core::ControllerHelpers::Order
 
     AFTERPAY_STATUS = {
       success: 'SUCCESS',
@@ -53,7 +55,7 @@ module Spree
     end
 
     def payment_method
-      @payment_method ||= Spree::PaymentMethod.find(params[:payment_method_id])
+      @payment_method ||= Spree::PaymentMethod.afterpay.first
     end
 
     def validate_token
